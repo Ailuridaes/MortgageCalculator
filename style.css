@@ -6,12 +6,11 @@ legend {
   font-size: 1.5em;
 }
 
-.error {
+#result.error {
   color: rgb(202, 60, 60);
   display:inline-block;
   border-radius: .5em;
   border: medium solid rgb(202, 60, 60);
-  margin: 1.5em 0;
 }
 
 #result {

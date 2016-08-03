@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <form class="pure-form pure-form-aligned">
+      <fieldset>
+        <legend>Mortgage Payment Calculator</legend>
+        <div class="pure-control-group">
+            <label for="balance">Loan Balance</label>
+            <input id="balance" type="text">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="rate">Interest Rate (%)</label>
+            <input id="rate">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="term">Loan Term (years)</label>
+            <input id="term">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="period">Period</label>
+            <select id="period">
+              <option value="12">Monthly</option>
+              <option value="6">Bi-Monthly</option>
+            </select>
+        </div>
+        <div class="pure-controls">
+          <button id="calculate" type="button" class="pure-button pure-button-primary">Calculate</button>
+        </div>
+      </fieldset>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

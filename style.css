@@ -1,0 +1,21 @@
+form {
+  margin: 20px;
+}
+
+legend {
+  font-size: 1.5em;
+}
+
+.error {
+  color: rgb(202, 60, 60);
+  display:inline-block;
+  border-radius: .5em;
+  border: medium solid rgb(202, 60, 60);
+  margin: 1em 0;
+}
+
+#result {
+  font-size: 120%;
+  padding: .5em;
+  margin: 1em;
+}
